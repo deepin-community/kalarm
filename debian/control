@@ -1,0 +1,79 @@
+Source: kalarm
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Michael Meskes <meskes@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+           Sandro Knauß <hefee@debian.org>,
+           Sune Vuorela <sune@debian.org>,
+Build-Depends: cmake (>= 3.16~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.83.0~),
+               gettext,
+               libkf5akonadi-dev (>= 4:21.08.1~),
+               libkf5akonadicontact-dev (>= 4:21.08.1~),
+               libkf5akonadimime-dev (>= 4:21.08.1~),
+               libkf5alarmcalendar-dev (>= 4:21.08.1~),
+               libkf5auth-dev (>= 5.83.0~),
+               libkf5calendarcore-dev (>= 5:5.83.0~),
+               libkf5calendarutils-dev (>= 4:21.08.1~),
+               libkf5codecs-dev (>= 5.83.0~),
+               libkf5completion-dev (>= 5.83.0~),
+               libkf5config-dev (>= 5.83.0~),
+               libkf5configwidgets-dev (>= 5.83.0~),
+               libkf5crash-dev (>= 5.83.0~),
+               libkf5dbusaddons-dev (>= 5.83.0~),
+               libkf5doctools-dev (>= 5.83.0~),
+               libkf5globalaccel-dev (>= 5.83.0~),
+               libkf5grantleetheme-dev (>= 21.08.1~),
+               libkf5guiaddons-dev (>= 5.83.0~),
+               libkf5holidays-dev (>= 1:5.83.0~),
+               libkf5i18n-dev (>= 5.83.0~),
+               libkf5identitymanagement-dev (>= 21.08.1~),
+               libkf5idletime-dev (>= 5.83.0~),
+               libkf5imap-dev (>= 21.08.1~),
+               libkf5jobwidgets-dev (>= 5.83.0~),
+               libkf5kcmutils-dev (>= 5.83.0~),
+               libkf5kio-dev (>= 5.83.0~),
+               libkf5mailcommon-dev (>= 4:20.08.3~),
+               libkf5mailtransport-dev (>= 21.08.1~),
+               libkf5mime-dev (>= 21.08.1~),
+               libkf5notifications-dev (>= 5.83.0~),
+               libkf5notifyconfig-dev (>= 5.83.0~),
+               libkf5pimcommon-dev (>= 4:21.08.1~),
+               libkf5pimtextedit-dev (>= 21.08.1~),
+               libkf5service-dev (>= 5.83.0~),
+               libkf5widgetsaddons-dev (>= 5.83.0~),
+               libkf5windowsystem-dev (>= 5.83.0~),
+               libkf5xmlgui-dev (>= 5.83.0~),
+               libphonon4qt5-dev,
+               libqt5x11extras5-dev (>= 5.15.0~),
+               libx11-dev,
+               pkg-config,
+               pkg-kde-tools (>= 0.12),
+               qtbase5-dev (>= 5.15.0~),
+               xsltproc,
+Standards-Version: 4.6.0
+Homepage: https://invent.kde.org/pim/kalarm
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/kalarm
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/kalarm.git
+Rules-Requires-Root: no
+
+Package: kalarm
+Architecture: any
+Depends: akonadi-server,
+         kdepim-runtime,
+         ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends},
+Homepage: http://www.astrojar.org.uk/kalarm/
+Description: alarm message, command and email scheduler
+ KAlarm provides a graphical interface to schedule personal timed events -
+ pop-up alarm messages, command execution and sending emails. There is a
+ range of options for configuring recurring events.
+ .
+ A pop-up alarm can show either a simple text message, or the contents of a
+ text or image file. It can optionally be spoken, or play a sound file. You
+ can choose its appearance, and set reminders. Among KAlarm's other
+ facilities, you can set up templates to allow KAlarm to be used as a 'tea
+ timer'.

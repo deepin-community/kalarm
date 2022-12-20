@@ -1,0 +1,347 @@
+kalarm (4:21.08.1-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:43:18 +0800
+
+kalarm (4:21.08.1-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.1).
+  * Bump Standards-Version to 4.6.0, no change required.
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 11 Sep 2021 07:20:28 +0900
+
+kalarm (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 15:47:02 +0900
+
+kalarm (4:21.04.3-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.3).
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 09 Jul 2021 10:33:47 +0900
+
+kalarm (4:21.04.1-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.1).
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 14 May 2021 06:09:34 +0900
+
+kalarm (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Removed Eshat Cakar, George Kiagiadakis, Maximiliano Curia, Modestas
+    Vainius from the uploaders, thanks for your work on the package!
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 13 May 2021 09:46:08 +0900
+
+kalarm (4:20.08.3-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.5.1 (No changes needed).
+  * New upstream release (20.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Minimize the upstream GPG signing key.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 16 Dec 2020 01:51:17 +0100
+
+kalarm (4:20.08.2-2) unstable; urgency=medium
+
+  * Team upload to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 20 Oct 2020 00:10:18 +0200
+
+kalarm (4:20.08.2-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.08.2).
+  * Update build-deps and deps with the info from cmake.
+  * Update Homepage link to point to new invent.kde.org
+  * Update field Source in debian/copyright to invent.kde.org move.
+  * Update repository related entries to metadata file.
+  * Add Bug-* entries to metadata file.
+  * Remove not needed Build-Depends.
+  * Update copyright file for 20.08.
+  * Fix copyright information for appdata.xml.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 16 Oct 2020 00:53:36 +0200
+
+kalarm (4:20.04.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Explicitly add the gettext build dependency.
+  * Unregister the old /etc/xdg/kalarm.categories,
+    /etc/xdg/kalarm.renamecategories, and
+    /etc/dbus-1/system.d/org.kde.kalarm.rtcwake.conf conffiles.
+    (Closes: #945125)
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+
+ -- Pino Toscano <pino@debian.org>  Thu, 20 Aug 2020 06:36:04 +0200
+
+kalarm (4:20.04.1-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.04.1).
+  * Update build-deps and deps with the info from cmake.
+  * Remove not needed Build-Depends.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 27 May 2020 00:01:13 +0200
+
+kalarm (4:20.04.0-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Update watch file to the new release-service location.
+  * Bump compat level to 13.
+  * Bump Standards-Version to 4.5.0 (No changes needed).
+  * Add Rules-Requires-Root field to control.
+  * New upstream release (20.04.0).
+  * Update build-deps and deps with the info from cmake.
+  * Enable hardening all.
+  * Set fields Upstream-Name, Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 13 May 2020 12:26:32 +0200
+
+kalarm (4:19.08.3-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (19.08.3).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 30 Nov 2019 22:56:02 +0100
+
+kalarm (4:19.08.2-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (19.08.2).
+  * Update build-deps and deps with the info from cmake.
+  * Remove breaks against kde-l10n packages.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 08 Nov 2019 10:42:31 +0100
+
+kalarm (4:18.08.3-4) unstable; urgency=medium
+
+    * Release to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 14 Nov 2019 23:55:00 +0100
+
+kalarm (4:18.08.3-3) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Add akonadi-server and kdepim-runtime as dependency. (Closes: #941481)
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 10 Oct 2019 19:34:29 +0200
+
+kalarm (4:18.08.3-2) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.4.1 (No changes needed).
+  * Bump compat level to 12.
+  * Add myself to Uploaders.
+  * Delete not needed Breaks/Confilcts.
+  * Enforce depdendencies between KDEPIM packages to enable bundling.
+
+ -- Sandro Knauß <hefee@debian.org>  Sun, 06 Oct 2019 22:45:14 +0200
+
+kalarm (4:18.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (18.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Bump Standards-Version to 4.3.0 (No changes needed).
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 04 Feb 2019 16:04:02 +0100
+
+kalarm (4:18.08.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.2.1 (No changes needed).
+  * New upstream release (18.08.1).
+  * Follow stable releases in KDE again.
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 02 Oct 2018 23:21:29 +0200
+
+kalarm (4:18.07.90-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Update watch file to match unstable releases, too.
+  * New upstream release (18.07.90).
+  * Bump Standards-Version to 4.2.0 (No changes needed).
+  * Update build-deps and deps with the info from cmake.
+  * Update copyright file for new upstream.
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 20 Aug 2018 15:32:27 +0200
+
+kalarm (4:17.12.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 4.1.4, no changes required.
+  * Remove the jovie suggest, as it is not useful for kalarm.
+  * Remove the autopkgtest stuff, as there is no test suite to run (and it
+    would be better run during the build, anyway).
+  * No need to run dh_makeshlibs -V, as there are no shared library packages.
+
+ -- Pino Toscano <pino@debian.org>  Tue, 08 May 2018 18:30:39 +0200
+
+kalarm (4:17.12.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.12.3).
+  * Update build-deps and deps with the info from cmake.
+  * use secure copyright format uri.
+  * Use secure uri in d/watch.
+  * small fixes in copyright file.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 31 Mar 2018 18:23:17 +0200
+
+kalarm (4:17.12.2-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.12.2).
+  * Update Vcs links to salsa.
+  * Bump Standards-Version to 4.1.3 (No changes needed).
+  * Update build-deps and deps with the info from cmake
+  * Update copyright file.
+  * Remove not needed staza to disable build tests.
+  * Bump debhelper build-dep and compat to 11.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 09 Mar 2018 15:13:46 +0100
+
+kalarm (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Maximiliano Curia ]
+  * New revision
+  * Update uploaders list as requested by MIA team
+
+  [ Sandro Knauß ]
+  * New upstream release (17.08.3).
+  * Bump Standards-Version to 4.1.2 (No changes needed).
+  * Add libx11-dev as Build-Dep.
+  * Bump debhelper build-dep and compat to 10.
+  * Set l10npkgs_firstversion_ok to 4:16.04.3-9~
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 21 Dec 2017 17:51:20 +0100
+
+kalarm (4:17.08.0-1) experimental; urgency=medium
+
+  * New upstream release (17.08.0)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * Add breaks/replaces for doc files moved from kdepim-doc
+  * Update copyright file
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 01 Sep 2017 22:08:18 +0200
+
+kalarm (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:32:02 +0000
+
+kalarm (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:18:27 +0000
+
+kalarm (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:20:20 +0000
+
+kalarm (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:11:50 +0000
+
+kalarm (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:02:50 +0000
+
+kalarm (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:46:51 +0000
+
+kalarm (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 16:56:32 +0000
+
+kalarm (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:14:49 +0000
+
+kalarm (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 22:43:43 +0000
+
+kalarm (4:16.11.90-0neon) xenial; urgency=medium
+
+  * Initial release based on the split of kdepim
+
+ -- Raymond Wooninck <tittiatcoke@gmail.com>  Mon, 12 Sep 2016 16:40:57 +0200
+kdepim (4:16.08.1-1~2.gbpb36d9f) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @b36d9f5ab35ffde3ed81e8616b1f61966d87f80b **
+
+  [ Maximiliano Curia ]
+  * Add libkf5akonadisearch-plugins dependency to kmail.
+    Thanks to Maria for reporting (Closes: 830563)
+  * Add new patch: akregator_crash_on_exit.patch.
+    Thanks to Ismael Bejarano for the backtrace and Sandro Knauß for the patch
+    (Closes: 836011)
+  * Update install files
+  * Add libkf5akonadisearch-plugins dependency to kmail.
+    Thanks to Maria for reporting (Closes: 830563)
+  * Add new patch: akregator_crash_on_exit.patch.
+    Thanks to Ismael Bejarano for the backtrace and Sandro Knauß for the patch
+    (Closes: 836011)
+  * Update install files
+  * Update changelog for 4:16.04.3-2~1.gbp1d9499 release
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+  * Refresh patches
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 09 Sep 2016 14:32:28 +0200
